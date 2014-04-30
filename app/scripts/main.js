@@ -17,7 +17,7 @@ $("#newListItem").on("submit", function(e) {
   		  		$(".toDoListContent").html(myList);
 
 });
-$(".toDoListContent li").on("click", "btn", function(e) {
+$(".toDoListContent").on("click", "li", function(e) {
 		e.preventDefault(); 
 		// console.log("yayays");
 		$(this).toggleClass("checkItem");
