@@ -17,10 +17,13 @@ $("#newListItem").on("submit", function(e) {
   		  		$(".toDoListContent").html(myList);
 
 });
-$(".toDoListContent").on("click", function(e) {
+$(".toDoListContent li").on("click", function(e) {
 		e.preventDefault(); 
 		// console.log("yayays");
-		$(this).children().toggleClass("checkItem");
+		$(this).toggleClass("checkItem");
+   $("toDoListContent").delegate( "td", "click", function() {
+  $( this ).toggleClass( "checkItem" );
+});
 });
 $(".itemsLeft").append(listData.length+" items left");
 

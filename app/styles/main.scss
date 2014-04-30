@@ -4,9 +4,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-}
+
 .itemsLeft{
     color: black;
+    font-size: 20px;
 }
 * {
   -moz-box-sizing: border-box;
@@ -14,11 +15,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
   list-style-type: none;
   font-size: 30px;  
 }
-.glyphicon{
-    cursor: pointer;
-}
 
-}
 .checkItem {
     text-decoration: line-through;
     color: grey;
