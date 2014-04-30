@@ -20,9 +20,8 @@ $("#newListItem").on("submit", function(e) {
 $(".toDoListContent").on("click", function(e) {
 		e.preventDefault(); 
 		// console.log("yayays");
-		$(this).remove($("toDoListContent").html());
-})
-
+		$(this).children().toggleClass("checkItem");
+});
 $(".itemsLeft").append(listData.length+" items left");
 
 });

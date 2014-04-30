@@ -17,14 +17,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .glyphicon{
     cursor: pointer;
 }
-// ul li{
-//   list-style-type: none;
-// }
-
 
 }
 .checkItem {
-    text-decoration: strike;
+    text-decoration: line-through;
     color: grey;
 }
 .form-control input {
