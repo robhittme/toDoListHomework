@@ -20,7 +20,8 @@
         <script type="template/html" id="toDoTmpl">
         <% _.each(listData, function(listData, index, list) { %>
                   
-                    <li> <span class="btn btn-default"></span><%= listData.content %></li>
+                    <li data-index= "<%= index %>"><%= listData.content %></li>
+
         <% }); %>
         </script>
     </head>
@@ -28,22 +29,22 @@
 
         <div class="container">
             <div class="header">
-                
                 <h3 class="text-muted">toDoListHomework</h3>
             </div>
             <header>
-            <h1>todos</h1>
+                <h1>todos</h1>
             </header>
-                <div class="jumbotron">
-                   
-                    <form id= "newListItem" action="">
+            <div class="jumbotron">
+               
+                <form id= "newListItem" action="">
                     <div class="taskContainer">
-                       
+                   
                         <input type="text" class="form-control newListItem" id="newListItem" placeholder="What needs to be done?">
                             <ul class="toDoListContent"> 
+                                <!-- content -->
                             </ul>
                     </div>
-                
+            
                 </form>
             </div>
           
@@ -51,14 +52,14 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4"> 
-                            <label>
+                            <label class="btn">
                                 <p class="itemsLeft"></p>
                               </label>
                         </div>
                         <div class="col-md-4">
                             <div class="btn-group" data-toggle="buttons">
                               <label class="btn">
-                                <input type="checkbox"> <a href="all.html"></a>All
+                                <input type="checkbox"> <a href="index"></a>All
                               </label>
                               <label class="btn">
                                 <input type="checkbox"> <a href="active.html"></a>Active
@@ -69,9 +70,9 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label class="btn pull-right"><a href="completed.html"></a>
+                            <label class="btn pull-right">
                                  Clear completed(#)
-                              </label>
+                            </label>
                         </div> 
                     </div>
                 </div>
