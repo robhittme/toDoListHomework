@@ -75,4 +75,20 @@ var $dbleClickEdit= $(".toDoListContent");
  $(".itemsLeft").html(listData.length+" items left");
 
 
+
+
+
+
+ $(".clearBtn").on("click", function() {
+     
+      var removeIndex = $(this).closest("li").data("index");
+      $(".checkItem").closest("li").remove();
+      listData.splice(removeIndex, 1);
+    var myList = _.template($("#toDoTmpl").html(), listData);
+      $(".toDoListContent").html(myList);
+
+// Keeps track of current tasks
+$(".itemsLeft").html(listData.length+" items left");
+
+ });
 });

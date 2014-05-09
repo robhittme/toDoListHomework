@@ -3,8 +3,40 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
-body{
-    background: rgb(176, 255, 254);
+
+.glyphicon-trash{
+    float: right;
+}
+
+.glyphicon{
+    display: inline;
+}
+body{     
+    background: rgba(161, 211, 236, 1.0000)
+    // background-image: url(http://images4.fanpop.com/image/photos/24500000/Hot-Coffee-coffee-24525831-1024-768.jpg);
+}
+
+.header{
+    color: 000;
+}
+
+.container{
+    background-color: rgba(161, 211, 236, 0.7);
+    border-radius: 15px;
+    width: 80%;
+}
+
+.btn{
+    color: 000;
+}
+
+header {
+    color: 000;
+}
+
+.jumbotron{
+    // border: 1px solid black;
+
 }
 .footer{
     margin: 0 auto;
@@ -12,7 +44,7 @@ body{
 }
 
 .itemsLeft{
-    color: grey;
+    color: 000;
     font-size: 14px;
     font-weight: normal;
     // padding-top: 20px;
@@ -59,24 +91,13 @@ body {
 }
 
 /* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
+
 
     /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
-}
+
 
 /* Custom page footer */
-.footer {
-    // padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-}
+
 
 .container-narrow > hr {
     margin: 30px 0;
