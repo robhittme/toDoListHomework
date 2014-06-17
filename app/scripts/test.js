@@ -18,7 +18,6 @@ var myToDo = {
           $("#newListItem").on("submit", this.addToDoItem);
           $(".toDoListContent").on("click", ".deleteToDo", this.checkToDo);
           $(".toDoListContent").on("dblclick", "li", this.dblClickItem);
-          $(".toDoListContent").on("focusout", "li>input", this.addEditItem);
           $("#editModal").on("click", ".submitupdate", function(e) {
             e.preventDefault();
             var postId= $(this).closest(".modal-footer").data("postid");

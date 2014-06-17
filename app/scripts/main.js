@@ -1,4 +1,4 @@
-$(document).ready(function() {
+.$(document).ready(function() {
   
 	var myList= _.template($("#toDoTmpl").html(), listData);
 
@@ -92,3 +92,4 @@ $(".itemsLeft").html(listData.length+" items left");
 
  });
 });
+
