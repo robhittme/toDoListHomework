@@ -48,7 +48,6 @@ var myToDo = {
             type: 'POST',
             data: todoItem,
             error: function() {
-              alert("YOU FUCKED UP");
             },
             success: function(data, dataType, jqXHR) {
                 myToDo.renderToDo();
@@ -89,7 +88,6 @@ var myToDo = {
             type: 'DELETE',
             // data: 'data',
             error: function() {
-              alert("YOU CANT DELETE WORTH SHIT!!");
             },
             success: function(data) {
               myToDo.renderToDo();
@@ -153,7 +151,6 @@ var myToDo = {
             type: "GET",
             dataType: "json",
             error: function(jqXHR, status, error) {
-              alert("You CANT GET LIKE A BITCH");
             },
             success: function(data, dataType, jqXHR) {
               var posts = window.posts = data; // have to make global for underscore to work
@@ -170,7 +167,6 @@ var myToDo = {
             type: "GET",
             dataType: "json",
             error: function(jqXHR, status, error) {
-              alert("render post detail is broken");
             },
             success: function(data, dataType, jqXHR) {   
               var post = window.post = data; // have to make global for underscore to work
