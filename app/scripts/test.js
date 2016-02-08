@@ -128,7 +128,6 @@ var myToDo = {
             type: "PUT",
             data: editModal, 
             error: function(jqXHR, status, error) {
-              alert("couldn't add post: " + error);
             },
             success: function(data, dataType, jqXHR) {
               console.log("in edit post");
